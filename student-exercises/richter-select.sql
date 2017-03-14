@@ -28,9 +28,25 @@ WHERE ID IN (1,3,5,7,19);
 */
 
 -- Ex4
+/*
 SELECT * FROM band
 WHERE isTogether = 1;
 
 SELECT ID, name
 FROM band
 WHERE ID = 4;
+*/
+
+-- Ex5
+SELECT * 
+FROM band 
+WHERE name LIKE '% and %';
+
+SELECT *
+FROM individual
+WHERE firstName LIKE '_im';
+
+SELECT *
+FROM band
+WHERE name LIKE '%s';
+
